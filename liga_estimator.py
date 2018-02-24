@@ -20,6 +20,7 @@ import argparse
 import tensorflow as tf
 
 import liga_data
+import summaryBoard
 
 
 parser = argparse.ArgumentParser()
@@ -31,6 +32,7 @@ def main(argv):
     args = parser.parse_args(argv[1:])
     print("***************************************")
     print("******            New Run         *****")
+        
     
     # Fetch the data
     (train_x, train_y), (test_x, test_y) = liga_data.load_data()

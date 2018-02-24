@@ -15,7 +15,7 @@ def main(argv):
     print("***************************************")
     print("******            New Run         *****")
     print('\nDebug Loading')
-    parsedXML = et.parse( "Ergbeniss_Saison_2016.xml" )  
+    parsedXML = et.parse( "sampleData/Ergbeniss_Saison_2016.xml" )  
     
     for node in parsedXML.getroot():
        #  for child in node:
